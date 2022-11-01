@@ -1,19 +1,25 @@
 {
-  "name": "svelte-scaffolding",
+  "name": "svelte-app",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.2",
-    "autoprefixer": "^10.4.11",
-    "svelte": "^3.49.0",
-    "svelte-heros": "^2.3.5",
-    "svelte-hover-draw-svg": "^2.1.3",
-    "vite": "^3.1.0"
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-parallax": "latest",
+    "svelte-inview": "latest"
+  },
+  "dependencies": {
+    "sirv-cli": "^2.0.0"
   }
 }
